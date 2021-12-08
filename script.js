@@ -12,6 +12,11 @@ if (today.getMonth() === 11 && today.getDay() >25){
 
 let christmasDay = new Date(currentYear, 11, 25);
 document.getElementById("christmas").innerText = christmasDay;
+ let timeDifference = christmasDay.getTime() - today.getTime();
+ console.log(timeDifference);
+//  round up
+// divide time diff by milliseconds in a day
+ let daystoXmas = Math.ceil(timeDifference/(1000 *60 * 60 * 24));
+ console.log(daystoXmas);
 
-
-
+document.getElementById("daystoxmas").innerText = daystoXmas;
