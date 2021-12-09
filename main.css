@@ -54,23 +54,28 @@ h2 {
 #daystoxmas {
   font-weight: 600;
   color: #33510c;
+  font-size: 1.5rem;
 }
 
 /* days to christmas */
 .xmas {
   font-weight: 600;
   color: #33510c;
+  font-size: 1.5rem;
 }
 
+a {
+  color: #342e37;
+}
 .footer {
   flex-shrink: 0;
-  color: #482625;
+  color: #342e37;
   padding: 10px;
   text-align: center;
 }
 
 footer {
-  background-color: white;
+  background-color: #fafffd;
   width: 100%;
 }
 
