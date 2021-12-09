@@ -3,15 +3,22 @@ let today = new Date();
 let currentYear = today.getFullYear();
 console.log(currentYear);
 
-document.getElementById("today").innerText = today;
+// output today's date
+// document.getElementById("today").innerText = today.toDateString();
+
 // are we past Christmas in current year? Is month =11 and date > 25
 if (today.getMonth() === 11 && today.getDay() >25){
     console.log("Past Xmas in current year");
     currentYear+1;
 }
 
+// set xmas date
 let christmasDay = new Date(currentYear, 11, 25);
-document.getElementById("christmas").innerText = christmasDay;
+document.getElementById("xmas-countdown").innerText = currentYear + " Christmas Countdown";
+
+// output xmas date to screen
+// document.getElementById("christmas").innerText = christmasDay.toDateString();
+
  let timeDifference = christmasDay.getTime() - today.getTime();
  console.log(timeDifference);
 //  round up

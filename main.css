@@ -1,0 +1,83 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(/images/mel-poole-LUPXhXj2ip0-unsplash.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  font-family: sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* remove margin on body so content is centered */
+  margin: 0;
+}
+
+h2 {
+  font-size: 1rem;
+}
+.content-wrapper {
+  flex: 1 0 auto;
+}
+
+.content-card {
+  background-color: white;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/*  */
+#xmas-countdown {
+  color: #a8101f;
+}
+
+/* days output */
+#daystoxmas {
+  font-weight: 600;
+  color: #33510c;
+}
+
+/* days to christmas */
+.xmas {
+  font-weight: 600;
+  color: #33510c;
+}
+
+.footer {
+  flex-shrink: 0;
+  color: #482625;
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: white;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .content-card {
+    width: 400px;
+    height: 400px;
+    margin-top: 50px;
+  }
+}
